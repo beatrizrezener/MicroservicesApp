@@ -8,6 +8,7 @@ using Catalog.API.Settings;
 using Catalog.API.Data;
 using Catalog.API.Data.Interfaces;
 using Catalog.API.Repositories;
+using Catalog.API.Repositories.Interfaces;
 
 namespace Catalog.API
 {

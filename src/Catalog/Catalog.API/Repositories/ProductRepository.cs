@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using MongoDB.Driver;
 using Catalog.API.Data.Interfaces;
 using Catalog.API.Entities;
-using MongoDB.Driver;
+using Catalog.API.Repositories.Interfaces;
 
 namespace Catalog.API.Repositories
 {
