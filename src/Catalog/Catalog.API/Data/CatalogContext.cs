@@ -1,5 +1,4 @@
-﻿using System;
-using MongoDB.Driver;
+﻿using MongoDB.Driver;
 using Catalog.API.Settings;
 using Catalog.API.Entities;
 using Catalog.API.Data.Interfaces;
