@@ -9,6 +9,8 @@
     <Folder Include="Controllers\" />
     <Folder Include="Entities\" />
     <Folder Include="Settings\" />
+    <Folder Include="Data\" />
+    <Folder Include="Data\Interfaces\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MongoDB.Driver" Version="2.11.3" />

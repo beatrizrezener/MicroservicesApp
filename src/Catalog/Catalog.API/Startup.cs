@@ -10,8 +10,10 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using Catalog.API.Settings;
 using Microsoft.Extensions.Options;
+using Catalog.API.Settings;
+using Catalog.API.Data;
+using Catalog.API.Data.Interfaces;
 
 namespace Catalog.API
 {
@@ -31,6 +33,8 @@ namespace Catalog.API
 
             services.Configure<CatalogDatabaseSettings>(Configuration.GetSection(nameof(CatalogDatabaseSettings)));
             services.AddSingleton<ICatalogDatabaseSettings>(sp => sp.GetRequiredService<IOptions<CatalogDatabaseSettings>>().Value);
+
+            services.AddTransient<ICatalogContext, CatalogContext>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
